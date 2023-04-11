@@ -1,0 +1,54 @@
+/*rgb(25, 21, 29)  rgb(224,211,211)*/
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: rgb(25, 21, 29);
+  --font-family: 'Orbitron', sans-serif;
+}
+body {
+  background-color: var(--bg-color);
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+.head {
+  color: whitesmoke;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.blockOfLink {
+  background-color: rgb(224,211,211);
+  height: 60px;
+  width: 400px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out;
+}
+.blockOfLink:hover {
+  background-color: azure;
+}
+.blockOfLink:active {
+  transition: none;
+  background-color: crimson;
+}
