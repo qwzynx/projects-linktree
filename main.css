@@ -34,21 +34,39 @@ header {
 
 
 .blockOfLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
   background-color: rgb(224,211,211);
   height: 60px;
-  width: 400px;
+  width: 500px;
   font-size: 20px;
   font-family: 'Orbitron', sans-serif;
   border-radius: 50px;
   font-weight: bold;
   margin-bottom: 10px;
   cursor: pointer;
-  transition: background-color .2s ease-in-out;
+  position: relative;
+  transition: background-color .2s ease-in-out, 
+    transform .2s ease-in-out;
 }
 .blockOfLink:hover {
-  background-color: azure;
+  transform: scale(1.1);
 }
 .blockOfLink:active {
   transition: none;
   background-color: crimson;
+}
+
+.text {
+  margin-left: 10px;
+}
+
+
+.icon {
+  position: absolute;
+  height: 45px;
+  left: 30px;
 }
