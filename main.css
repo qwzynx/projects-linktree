@@ -1,6 +1,7 @@
 /*rgb(25, 21, 29)  rgb(224,211,211)*/
 
 * {
+  -webkit-tap-highlight-color: transparent;
   border: 0;
   box-sizing: border-box;
   margin: 0;
@@ -59,14 +60,35 @@ header {
   transition: none;
   background-color: crimson;
 }
-
-.text {
-  margin-left: 10px;
-}
-
-
 .icon {
   position: absolute;
   height: 45px;
   left: 30px;
+}
+
+.copy {
+  font-family: 'Orbitron', sans-serif;
+  margin: 30px;
+  color: white;
+  transition: color .5s var(--trans-timing);
+}
+
+
+@media (max-width: 500px) {
+  .blockOfLink {
+    width: 365px;
+    font-size: 16px;
+  }
+  .icon {
+    height: 32px;
+    left: 20px;
+  }
+  .head {
+    font-size: 30px;
+  }
+  .copy {
+    font-size: 15px;
+    position: absolute;
+    bottom: 0;
+  }
 }
